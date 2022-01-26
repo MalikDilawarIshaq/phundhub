@@ -21,25 +21,28 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
-<body>
+<body class="panel" data-color="white">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="javsScript.js">
+  </script>
 
-<div class="d-flex justify-content-center flex-column align-items-center w-100" >
+<div class="d-flex justify-content-center flex-column align-items-center w-100 bg-transparent" >
     <!-- navbar -->
-    <nav class="w-100 position-fixed margin-0 navbar navbar-expand-xl navbar-light fixed-top bg-white">
-        <div class="container-fluid max-w">
-            <a class="py-27" href="index.html"><img class="py-12" width="223px" height="38px" src="images/logo.png"></a>
+    <nav class="navbar xl:w-100 position-fixed margin-0 navbar navbar-expand-xl navbar-light fixed-top bg-white">
+        <div class="d-flex justify-content-between justify-content-xl-start w-100 margin-0 px-20">
+            <a class=" navbar-brand" href="index.html"><img width="112px" height="19px" src="images/logo.png"></a>
 
-            <div class="navbar-collapse" id="ph-nav">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0 ps-md-4">
+            <div class="d-none d-xl-block navbar-collapse padding-0" id="ph-nav">
+                <ul class="navbar-nav d-flex  ">
                     <li class="nav-item">
-                        <span class="d-flex justify-content-between align-items-center pl-4">
-                            <a href="index.html" title="Revenue Funding" class="dropper active  text-dark font-Roboto text-26 font-weight-bold py-11 hover  "> Revenue Funding</a>
+                        <span class="xl:d-flex xl:justify-content-between xl:align-items-center pl-15">
+                            <a href="index.html" title="Revenue Funding" class="dropper active  text-black font-Roboto text-18  hover  "> Revenue Funding</a>
                             <span class="ph-sm-droopper"><i class="bi bi-chevron-down "></i></span>
                         </span>
                     </li>
                     <li class="nav-item ms-md-4 ">
-                        <div class="dropdown pl-4">
-                            <button class="dropbtn py-11 text-26 font-weight-bold  font-Roboto text-dark hover">Line of Credit</button>
+                        <div class="dropdown pl-15">
+                            <button class="dropbtn text-black font-Roboto text-18  hover">Line of Credit</button>
                             <div class="dropdown-content font-Roboto">
                               <a class="text-dark" href="#">Pricing</a>
                               <a class="text-dark" href="#">How It Works</a>
@@ -49,8 +52,8 @@
                           </div>
                     </li>
                     <li class="nav-item ms-md-4">
-                        <span class="d-flex justify-content-between align-items-center pl-4">
-                            <a href="company.html" title="Company" class="dropper  font-Roboto text-26 font-weight-bold py-11 text-dark hover ">Company</a>
+                        <span class="d-flex justify-content-between align-items-center pl-15">
+                            <a href="company.html" title="Company" class="dropper  text-black font-Roboto text-18  hover ">Company</a>
                             <span class="ph-sm-droopper"><i class="bi bi-chevron-down"></i></span>
                         </span>
                     </li>
@@ -58,9 +61,9 @@
             </div>
             <div class="d-flex align-items-center">
                 <form>
-                    <a href="https://app.phundhub.com/" class="btn btn-warning font-Roboto font-500 ">Apply</a>
+                    <a href="https://app.phundhub.com/" class=" d-none d-xl-block text-16 btn btn-warning font-Roboto font-500 ">Apply</a>
                 </form>
-                <a href="https://app.phundhub.com/login" title="Company" class="dropper  login-link font-Roboto text-dark ">Log in</a>
+                <a href="https://app.phundhub.com/login" title="Company" class="d-none d-xl-block dropper  login-link font-Roboto text-black ">Log in</a>
                 <button class="hamburger hamburger--squeeze navbar-toggler ps-3 pt-2" type="button">
                     <span class="hamburger-box">
                       <span class="hamburger-inner"></span>
@@ -71,62 +74,63 @@
     </nav>
 
     <!-- welcome section -->
-    <div class="d-flex w-100 justify-content-center bg-welcome-section mt-128">
-         <div class="max-w  d-flex w-58 flex-column align-items-center">
-             <h1 class="text-68 font-Roboto font-800 text-center mt-68">Revolving credit for business growth or expenses</h1>
-             <img class="pt-32 pb-2 mr-80" width="775px" height="545px" src="images/welcomeSectionImg.png">
+    <div   class=" d-flex w-100 justify-content-center bg-welcome-section mt-63">
+         <div class=" d-flex w-80 flex-column align-items-center">
+             <h1 class="text-100 text-92 font-Roboto font-900 text-center mt-68">Revolving credit for business growth or expenses</h1>
+             <lottie-player class="welcom-img" src="https://assets7.lottiefiles.com/packages/lf20_es7gqekm.json" background="transparent"  speed="1"  loop  autoplay></lottie-player>
+             <!-- <img class="pt-32 pb-2 mr-80 welcom-img" width="775px" height="545px" src="images/welcomeSectionImg.png"> -->
          </div>
     </div>
 
     <!-- section-1 -->
-    <div class=" d-flex w-100 justify-content-center bg-section-1 ">
+    <div data-color="lightBlue"  class=" panel bg-transparent d-flex w-100 justify-content-center  ">
         <div class=" w-100 d-flex flex-column align-items-center">
-            <h1 class="font-Roboto font-800 text-58 mt-103">
+            <h1 class="font-Roboto font-900 text-100 mt-103">
                 Pricing made simple 
             </h1>
-            <div class=" d-flex flex-column align-items-center ">
-                <div class="d-flex justify-content-evenly w-100 mt-103 flex-wrap">
+            <div class="w-90 d-flex flex-column align-items-center ">
+                <div class="d-flex flex-col  justify-content-between w-100 mt-103 flex-wrap">
                    <div class="d-flex flex-column align-items-center">
                     <img class="pt-18 pb-2"  src="images/pricing-1.png">
-                      <div class="bg-pricing-1 mt-3">
-                         <p class="font-weight-bold font-Roboto text-20 text-center text-black mt-40">Funding to match your business’s needs</p>
-                         <p class="font-Roboto text-20 text-center">Lines of credit from $5,000 – $250,0000</p>
+                      <div class="bg-pricing-1 mt-3 d-flex flex-column align-items-center">
+                         <p class="font-weight-bold font-Roboto text-18px text-20 text-center text-black mt-30px mt-40">Funding to match your business’s needs</p>
+                         <p class="font-Roboto w-284 text-18px text-20 text-center">Lines of credit from $5,000 – $250,0000</p>
                       </div>
                    </div>
 
-                   <div class="d-flex flex-column align-items-center ml-105">
+                   <div class="d-flex flex-column align-items-center  ml-105">
                     <img class="pt-32 pb-2"  src="images/pricing-2.png">
-                      <div class="bg-pricing-2 mt-3">
-                         <p class="font-weight-bold font-Roboto text-20 text-center text-black mt-40">Aggressive pricing for all tiers </p>
-                         <p class="font-Roboto text-20 text-center">Rates as low as 5% per a draw </p>
+                      <div class="bg-pricing-2 mt-3 d-flex flex-column align-items-center">
+                         <p class="font-weight-bold font-Roboto text-18px text-20 text-center text-black mt-30px mt-40">Aggressive pricing for all tiers </p>
+                         <p class="font-Roboto w-284 text-18px text-20 text-center">Rates as low as 5% per a draw </p>
                       </div>
                    </div>
 
-                   <div class="d-flex flex-column align-items-center ml-105">
+                   <div class="d-flex flex-column align-items-center  ml-105">
                     <img class="pt-32 pb-2"  src="images/pricing-3.png">
-                      <div class="bg-pricing-3 mt-3">
-                         <p class="font-weight-bold font-Roboto text-20 text-center text-black mt-40">Pay us back over time</p>
-                         <p class="font-Roboto text-20 text-center">Repayment terms from  3 – 6  months per a draw</p>
+                      <div class="bg-pricing-3 mt-3 d-flex flex-column align-items-center">
+                         <p class="font-weight-bold font-Roboto text-18px text-20 text-center text-black mt-30px mt-40">Pay us back over time</p>
+                         <p class="font-Roboto w-284 text-18px text-20 text-center w-360 ">Repayment terms from  3 – 6  months per a draw</p>
                       </div>
                    </div>
                 </div>
 
 
-                <div class="d-flex justify-content-evenly mb-79  mt-70 flex-wrap">
-                    <div class="d-flex flex-column align-items-center pt-37">
+                <div class="w-90 justify-content-between  d-flex flex-col mb-79 mt-25  mt-70 flex-wrap">
+                    <div class="d-flex flex-column align-items-center pt-0px pt-37">
                      <img class="pt-18 pb-2"  src="images/pricing-4.png">
                        <div class="bg-pricing-4 mt-3 d-flex flex-column align-items-center">
-                          <p class="font-weight-bold font-Roboto text-20 text-center text-black mt-40">Flexibility with positioning </p>
-                          <p class="font-Roboto text-20 w-80">Whether you have a current loan, line of credit or 
+                          <p class="font-weight-bold font-Roboto text-18px text-20 text-center text-black mt-30px mt-40">Flexibility with positioning </p>
+                          <p class="font-Roboto text-18px text-20 w-80 w-360">Whether you have a current loan, line of credit or 
                             advance, we could potentially offer additional funding. </p>
                        </div>
                     </div>
  
                     <div class="d-flex flex-column align-items-center ml-105">
-                     <img class="pt-32 pb-2"  src="images/pricing-5.png">
-                       <div class="bg-pricing-5 mt-3 d-flex flex-column align-items-center">
-                          <p class="font-weight-bold font-Roboto text-20 text-center text-black mt-40">Auto pay enabled  </p>
-                          <p class="font-Roboto text-20 w-80">We’ll auto debit your weekly or daily payment from 
+                     <img class="pt-32 pt-6 pb-2"  src="images/pricing-5.png">
+                       <div class="bg-pricing-5 xxl:mt-3 d-flex flex-column align-items-center">
+                          <p class="font-weight-bold font-Roboto text-18px text-20 text-center text-black mt-30px mt-40">Auto pay enabled  </p>
+                          <p class="font-Roboto text-18px text-20 w-80 w-360">We’ll auto debit your weekly or daily payment from 
                             your bank account so you don’t have to think about it. </p>
                        </div>
                     </div>
@@ -137,7 +141,7 @@
     </div>
 
    <!-- section-2 -->
-   <div class="w-100 bg-section-2">
+   <div data-color="pink" class="bg-transparent panel w-100 ">
        <!-- Slider -->
        <div class="w-100">
         <div id="myCarousel" class="carousel slide w-100 " data-ride="carousel">
@@ -150,14 +154,14 @@
               <div class="d-flex justify-content-center  w-100">
                   <!-- slider img -->
                   <div class="position-relative mt-128 mb-141">   
-                  <img class="" width="712" height="581" src="./images/sliderImg.png"  />
-                  <img   class="position-absolute left-0" width="712" height="581" src="./images/sliderImg-1.png"  />
+                  <img class="slider-img" width="712" height="581" src="./images/sliderImg.png"  />
+                  <img   class="position-absolute left-0 slider-img" width="712" height="581" src="./images/sliderImg-1.png"  />
                 </div>
                     <!-- slider content -->
-                     <div class="ml-90 w-25 ">
-                         <h1 class="text-68 font-800 font-Roboto mt-170  ">How it works?    </h1>
-                         <h2 class="text-28 font-weight-bold font-Roboto text-black">Apply seamlessly in just minutes </h2>
-                         <p class="text-20 font-Roboto text-black">
+                     <div class="ml-90 w-40 w-34 ">
+                         <h1 class="text-100 font-900 font-Roboto mt-170  ">How it works?    </h1>
+                         <h2 class="text-28 font-weight-bold font-Roboto text-black text-black margin-0 pt-5 pb-2">Apply seamlessly in just minutes </h2>
+                         <p class="line-height-30 font-Roboto text-black">
                           Give us a look inside your business so we can
                           provide a quick funding decision. First, share some 
                          basic information about yourself and your business. 
@@ -175,14 +179,14 @@
               <div class="d-flex justify-content-center  w-100">
                   <!-- slider img -->
                   <div class="position-relative mt-128 mb-141">   
-                  <img class="" width="712" height="581" src="./images/sliderImg.png"  />
-                  <img   class="position-absolute left-0" width="712" height="581" src="./images/sliderImg-1.png"  />
+                  <img class="slider-img" width="712" height="581" src="./images/sliderImg.png"  />
+                  <img   class="position-absolute left-0 slider-img" width="712" height="581" src="./images/sliderImg-1.png"  />
                 </div>
                     <!-- slider content -->
-                     <div class="ml-90 w-25 position-relative">
-                         <h1 class="text-68 font-800 font-Roboto  mt-170  ">How it works?    </h1>
-                         <h2 class="text-28 font-weight-bold font-Roboto text-black">Apply seamlessly in just minutes </h2>
-                         <p class="text-20 font-Roboto text-black">
+                     <div class="ml-90 w-40 w-34 position-relative">
+                         <h1 class="text-100 font-900 font-Roboto  mt-170  ">How it works?    </h1>
+                         <h2 class="text-28 font-weight-bold font-Roboto text-black margin-0 pt-5 pb-2">Apply seamlessly in just minutes </h2>
+                         <p class="line-height-30 font-Roboto text-black">
                           Give us a look inside your business so we can
                           provide a quick funding decision. First, share some 
                          basic information about yourself and your business. 
@@ -200,13 +204,13 @@
               <div class="d-flex justify-content-center  w-100">
                   <!-- slider img -->
                   <div class="position-relative mt-128 mb-141">   
-                  <img class="" width="712" height="581" src="./images/sliderImg.png"  />
-                  <img   class="position-absolute left-0" width="712" height="581" src="./images/sliderImg-1.png"  />
+                  <img class="slider-img" width="712" height="581" src="./images/sliderImg.png"  />
+                  <img   class="position-absolute left-0 slider-img" width="712" height="581" src="./images/sliderImg-1.png"  />
                 </div>
                     <!-- slider content -->
-                     <div class="ml-90 w-25 position-relative">
-                         <h1 class="text-68 font-800 font-Roboto  mt-170  ">How it works?    </h1>
-                         <h2 class="text-28 font-weight-bold font-Roboto text-black">Apply seamlessly in just minutes </h2>
+                     <div class="ml-90 w-40 w-34 position-relative">
+                         <h1 class="text-100 font-900 font-Roboto  mt-170  ">How it works?    </h1>
+                         <h2 class="text-28 font-weight-bold font-Roboto text-black margin-0 pt-5 pb-2">Apply seamlessly in just minutes </h2>
                          <p class="line-height-30 font-Roboto text-black">
                           Give us a look inside your business so we can
                           provide a quick funding decision. First, share some 
@@ -223,8 +227,8 @@
         
           </div>
            <!-- Left and right controls -->
-          <div class="position-absolute w-110 slider-indecator">
-            <a class="text-black " href="#myCarousel" data-slide="prev">
+          <div class="position-absolute w-112 slider-indecator">
+            <a class="text-black  h4" href="#myCarousel" data-slide="prev">
              <span class="glyphicon glyphicon-chevron-left"></span>
              <span class="sr-only">Previous</span>
            </a>
@@ -236,7 +240,7 @@
              <li data-target="#myCarousel" data-slide-to="2" class="ml-2"></li>
            </ol>
 
-           <a class="ml-70 text-black" href="#myCarousel" data-slide="next">
+           <a class="h4 ml-70 text-black" href="#myCarousel" data-slide="next">
              <span class="glyphicon glyphicon-chevron-right"></span>
              <span class="sr-only">Next</span>
            </a>
@@ -246,6 +250,159 @@
         </div>
       </div>
    </div>
+   <!-- section-3 -->
+   <div data-color="darkBlue" class="panel bg-transparent w-100 d-flex justify-content-center">  
+      <div class="w-80-1536 w-72 d-flex justify-content-between">
+        <div>
+          <h1 class="text-100 font-Roboto font-900 text-white mt-225">Do I Qualify?</h1>
+          <p class="line-height-30 font-Roboto text-white mt-4">
+            Find out if your business is eligible for funding
+          </p>
+          <button class="btn btn-start text-white font-Roboto mt-9">
+            Start 
+            <svg class="ml-1 mb-4" width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z" fill="white"/>
+              </svg>
+              
+          </button>
+        </div>
+         <div class="mt-80 mb-67 quality-img">
+          <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_gmh3ohsb.json" background="transparent"  speed="1"  loop  autoplay></lottie-player>
+          <!-- <img class="quality-img"  src="./images/qualityImg.png" /> -->
+        </div> 
+      </div>
+   </div>
+
+   <!-- section-4 -->
+    <div data-color="lightRed" class="panel bg-transparent w-100 d-flex flex-column align-items-center">
+        <div>
+          <h1 class="text-100 font-Roboto font-900 text-white mt-80 text-center">
+            Let’s crunch some numbers 
+            </h1>
+        </div>
+        <div class=" d-flex justify-content-between">  
+          <div>
+            <p class="line-height-30 font-Roboto font-500 text-black mt-99">
+              Type the amount you’d like 
+            </p>
+            <div class="d-flex amount-input mt-1">
+              <p class="d-flex justify-content-center align-items-center font-Roboto   amount-input-1">$</p>
+              <input id="amount" class="input-1 font-Roboto text-black px-3" type="number" />
+            </div>
+            <p class="line-height-30 font-Roboto font-500 text-black mt-4">
+              Payback length 
+            </p>
+         <!-- Dropdown -->
+             
+            <div className=' amount-input '>
+              <button onclick="showDropDown()" class="d-flex justify-content-between align-items-center px-21 border-0 dropdown-color outline-0  amount-input font-Roboto " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                3 months 
+                <svg class="w-10 h-10" width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.2796 0.625H16.7204C16.9759 0.626071 17.2253 0.702867 17.4371 0.845677C17.6489 0.988487 17.8136 1.1909 17.9104 1.42732C18.0072 1.66373 18.0317 1.92354 17.9808 2.17388C17.9299 2.42422 17.806 2.65386 17.6246 2.83375L10.4171 10.0412C10.297 10.1623 10.1542 10.2584 9.99676 10.324C9.83936 10.3896 9.67053 10.4233 9.50001 10.4233C9.3295 10.4233 9.16067 10.3896 9.00327 10.324C8.84587 10.2584 8.70301 10.1623 8.58293 10.0412L1.37543 2.83375C1.19405 2.65386 1.07009 2.42422 1.01922 2.17388C0.968347 1.92354 0.992848 1.66373 1.08963 1.42732C1.18641 1.1909 1.35112 0.988487 1.56293 0.845677C1.77474 0.702867 2.02414 0.626071 2.2796 0.625Z" fill="#9D9D9D"/>
+                  </svg>
+                  
+              </button>
+               
+                <div id="drop" style="display: none;" class="bg-white w-768 h-75 overflow-auto " >
+                  <button id="3month" onclick="get3Month()" value="3"  class="dropdown-item px-21  font-Roboto  font-500 py-3" >3 months</button>
+                  <button id="6month" onclick="get6Month()" value="6"   class="dropdown-item px-21 font-Roboto  font-500 py-3" >6 months</button>
+                 
+                </div>
+              </div>
+              
+
+
+            
+
+            <!-- Calculate btn -->
+            <div class="w-100 d-flex justify-content-center">
+              <button onclick="calculate()" class="btn calculate-btn font-Roboto line-height-30 text-white mt-38 mt-40 mb-100 mb-150 mb-200">Calculate</button>
+            </div>
+              
+          </div>
+  
+
+          <div class="output d-flex justify-content-between mt-140 ml-108">
+           <div class="w-50">
+            <p class="font-Roboto line-height-30 text-black font-500 mt-4 ml-35 ">
+              Weekly payment
+            </p>
+            <p id="weeklyPayment" class="font-Roboto line-height-30 text-black font-500 mt-4 ml-35 ">
+              $
+            </p>
+          </div>
+            <p class="border-solid"></p>
+            <div class="w-50"> 
+              <p class="font-Roboto line-height-30 text-black font-500 mt-4 ml-35 ">
+                Total number of payments
+              </p>
+              <p id="weeks" class="font-Roboto line-height-30 text-black font-500 mt-4 ml-35 ">
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="pt-5 footer w-100  font-Roboto position-relative">
+      <div class="container-fluid w-90">
+          <div class="row ">
+              <div class="col-lg-6 ">
+                  <div class="row ">
+                      <div class="col-lg-4 col-md-6 border-end mb-md-3 mb-5 mb-md-0">
+                          <h5>Products</h5>
+                          <a href="index.html">Revenue Funding</a>
+                      </div>
+                      <div class="col-lg-8 col-md-6 ps-lg-5 mb-md-3  mb-5 mb-md-0">
+                          <h5>Resources</h5>
+                          <a href="pricing.html" class="pe-4 ">Pricing</a>|<a href="company.html#blog" class="ps-4 ">Blog</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 ">
+                  <div class="row ">
+                      <div class="col-lg-8 col-md-6 border-start ps-lg-5 mb-md-3  mb-5 mb-md-0">
+                          <h5>Questions?</h5>
+                          <a href="company.html#faq" class="pe-4 ">FAQ’s</a>|<span class="ps-4 ">Call us: 	
+                              <a href="tel:(888) 429-0826">(888) 429-0826</a></span></div>
+                      <div class="col-lg-4 col-md-6 social border-start ps-lg-5 mb-md-3  mb-5 mb-md-0">
+                          <a href="https://www.facebook.com/Phundhub" target="_blank" class="pe-2 "><img width="40px" height="40px" src="images/fb.png "></a>
+                          <a href="https://twitter.com/Phundhub" target="_blank" class="pe-2 "><img width="40px" height="40px" src="images/tw.png "></a>
+                          <a href="https://www.instagram.com/phundhub/" target="_blank"><img width="40px" height="40px" src="images/ig.png "></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row py-3 ">
+              <div class="col-md-6 f-2-l  ">
+                  <p class="mb-16">We use leading security services and maintain best practices to ensure your information is safe and secure. </p>
+                  <div class="flex">
+                    <img width="73px" height="42px" src="images/f1.png"/>
+                    <img width="160px" height="30px" src="images/f2.png"/>
+                  </div>
+              </div>
+              <div class="col-md-6 mt-5 mt-md-0 ">
+                  <p class="mb-16">Phundhub makes capital available to qualified businesses through the Phundhub platform by directly funding the advance, in addition to brokering advances to our partners. </p>
+                  <p class="mb-16">© 2021 All rights reserved </p>
+              </div>
+          </div>
+          <div class="row border-top py-3 ">
+              <div class="col-md-12 text-center  ">
+                  <a href="terms-and-conditions.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="disclaimer.html">Disclaimer  </a>
+              </div>
+          </div>
+      </div>
+      <div class="messages d-flex justify-content-center align-items-center">
+        <svg focusable="false" aria-hidden="true" viewBox="0 0 28 32" width="28" height="32"><path d="M28,32 C28,32 23.2863266,30.1450667 19.4727818,28.6592 L3.43749107,28.6592 C1.53921989,28.6592 0,27.0272 0,25.0144 L0,3.6448 C0,1.632 1.53921989,0 3.43749107,0 L24.5615088,0 C26.45978,0 27.9989999,1.632 27.9989999,3.6448 L27.9989999,22.0490667 L28,22.0490667 L28,32 Z M23.8614088,20.0181333 C23.5309223,19.6105242 22.9540812,19.5633836 22.5692242,19.9125333 C22.5392199,19.9392 19.5537934,22.5941333 13.9989999,22.5941333 C8.51321617,22.5941333 5.48178311,19.9584 5.4277754,19.9104 C5.04295119,19.5629428 4.46760991,19.6105095 4.13759108,20.0170667 C3.97913051,20.2124916 3.9004494,20.4673395 3.91904357,20.7249415 C3.93763774,20.9825435 4.05196575,21.2215447 4.23660523,21.3888 C4.37862552,21.5168 7.77411059,24.5386667 13.9989999,24.5386667 C20.2248893,24.5386667 23.6203743,21.5168 23.7623946,21.3888 C23.9467342,21.2215726 24.0608642,20.9827905 24.0794539,20.7254507 C24.0980436,20.4681109 24.0195551,20.2135019 23.8614088,20.0181333 Z" fill='white'></path></svg>
+      </div>
+  </footer>
+         
+
+   
+    
+  
+
 
 </div>
 
