@@ -31,7 +31,7 @@ $(window).scroll(function() {
 
   
 // Show drop down
-let threeMonths, sixMonths,x,amount,totalWeeks,fivePercent,tenPercent;
+var threeMonths, sixMonths,x,amount,totalWeeks,fivePercent,tenPercent;
 function showDropDown(){
      x = document.getElementById("drop");
     if (x.style.display === "none") {
@@ -45,10 +45,14 @@ function showDropDown(){
 
 function get3Month(){
     threeMonths = parseInt(document.getElementById("3month").value);
+    document.getElementById("dropdownMenuButton").innerHTML= "3 Months";
+    sixMonths = "";
     x.style.display = "none";
 }
 function get6Month(){
     sixMonths = parseInt(document.getElementById("6month").value);
+    document.getElementById("dropdownMenuButton").innerHTML= "6 Months";
+    threeMonths = "";
     x.style.display = "none";
 }
 function calculate(){
@@ -71,16 +75,13 @@ function calculate(){
          console.log(amount,totalWeeks)
     }
     else{
+        alert("Please Select Length");
         
-         document.getElementById("weeks").innerHTML = 12;
-        fivePercent = (amount*5)/100;
-        amount = parseInt(amount) + parseInt(fivePercent);
-         document.getElementById("weeklyPayment").innerHTML = "$"+ " " + amount;
-         console.log(amount)
     }
  }
  else{
      alert("Please Enter Amount");
  }
- 
+ amount = document.getElementById("amount").value = " ";
+ document.getElementById("dropdownMenuButton").innerHTML= "3 months ";
 }
