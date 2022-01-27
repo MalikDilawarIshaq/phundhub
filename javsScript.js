@@ -117,8 +117,88 @@ function calculate(){
  else{
      alert("Please Enter Amount");
  }
- amount = document.getElementById("amount").value = " ";
- document.getElementById("dropdownMenuButton").innerHTML= "3 months ";
+//  amount = document.getElementById("amount").value = " ";
+//  document.getElementById("dropdownMenuButton").innerHTML= "3 months ";
+}
+let stepNumber = 1;
+let choices = ['yes','yes','yes','yes','yes','yes'];
+function doIQualify() {
+  document.getElementById('text-to-remove').style.display = "none";
+  document.getElementById('button-to-remove').style.display = "none";
+  document.getElementById('qualify-steps').style.display = "block";
+  document.getElementById('step-1').classList.add('active-step');
+  document.getElementById('qualify-buttons').style.display = 'block';
+  document.getElementById('qualify-step-1').style.display = 'block';
 }
 
+function yes() {
+  if (stepNumber < 6) {
+    document.getElementById(`step-${stepNumber+1}`).classList.add('active-step');
+    document.getElementById(`qualify-step-${stepNumber}`).style.display = 'none';
+    document.getElementById(`qualify-step-${stepNumber+1}`).style.display = 'block';
+    choices[stepNumber] = 'yes';
+    stepNumber++;
+  } else {
+    document.getElementById('qualify-buttons').style.display = 'none';
+    document.getElementById('qualify-steps').style.display = "none"
+    document.getElementById('qualify-step-1').style.display = 'none';
+    document.getElementById('qualify-step-2').style.display = 'none';
+    document.getElementById('qualify-step-3').style.display = 'none';
+    document.getElementById('qualify-step-4').style.display = 'none';
+    document.getElementById('qualify-step-5').style.display = 'none';
+    document.getElementById('qualify-step-6').style.display = 'none';
+    document.getElementById(`step-1`).classList.remove('active-step');
+    document.getElementById(`step-2`).classList.remove('active-step');
+    document.getElementById(`step-3`).classList.remove('active-step');
+    document.getElementById(`step-4`).classList.remove('active-step');
+    document.getElementById(`step-5`).classList.remove('active-step');
+    document.getElementById(`step-6`).classList.remove('active-step');
+    stepNumber = 1;
+    getYesOrNo();
+  }
+}
 
+function no() {
+  if (stepNumber < 6) {
+    document.getElementById(`step-${stepNumber+1}`).classList.add('active-step');
+    document.getElementById(`qualify-step-${stepNumber}`).style.display = 'none';
+    document.getElementById(`qualify-step-${stepNumber+1}`).style.display = 'block';
+    choices[stepNumber] = 'no';
+    stepNumber++;
+  } else {
+    document.getElementById('qualify-buttons').style.display = 'none';
+    document.getElementById('qualify-step-1').style.display = 'none';
+    document.getElementById('qualify-steps').style.display = "none"
+    document.getElementById('qualify-step-2').style.display = 'none';
+    document.getElementById('qualify-step-3').style.display = 'none';
+    document.getElementById('qualify-step-4').style.display = 'none';
+    document.getElementById('qualify-step-5').style.display = 'none';
+    document.getElementById('qualify-step-6').style.display = 'none';
+    document.getElementById(`step-1`).classList.remove('active-step');
+    document.getElementById(`step-2`).classList.remove('active-step');
+    document.getElementById(`step-3`).classList.remove('active-step');
+    document.getElementById(`step-4`).classList.remove('active-step');
+    document.getElementById(`step-5`).classList.remove('active-step');
+    document.getElementById(`step-6`).classList.remove('active-step');
+    getYesOrNo();
+    stepNumber = 1;
+  }
+}
+
+const getYesOrNo = () => {
+  if (choices.includes('no')) {
+    document.getElementById('qualify-step-no').style.display = "block";
+    document.getElementById('qualify-step-yes').style.display = "none";
+  } else {
+    document.getElementById('qualify-step-no').style.display = "none";
+    document.getElementById('qualify-step-yes').style.display = "block";
+  }
+}
+
+const startOver = () => {
+  choices = ['yes','yes','yes','yes','yes','yes'];
+  stepNumber = 1;
+  doIQualify();
+  document.getElementById('qualify-step-no').style.display = "none";
+  document.getElementById('qualify-step-yes').style.display = "none";
+}

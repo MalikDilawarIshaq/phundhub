@@ -2736,8 +2736,8 @@ body {
          /* <!-- section-1 --> */
      }
      .welcom-img{
-        width: 705px;
-        height: 475px;
+        width: 725px;
+        height: 495px;
     }
      
     .mt-63{
@@ -3432,10 +3432,111 @@ body {
     .mb-16{
         margin-bottom: 16px;
     }
-    
+}
 
-    
-    
-    
-        
+@media (max-width: 641px) {
+    .font-52 {
+        font-size: 48px!important;
+        width: 100%!important;
     }
+}
+.centered-text {
+    text-align: center!important;
+}
+.qualify-step {
+    width: 60px;
+    height: 10px;
+    background: #ffffff;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+.active-step {
+    background: #e66b61;
+    opacity: 1;
+}
+.qualify-section {
+    margin-top: 12px;
+}
+.qualify-section p {
+    font-size: 24px!important;
+    font-family: 'Roboto','sans-serif';
+    max-width: 500px;
+
+}
+
+#qualify-yes {
+    background-color: #f68f87;
+    color: white;
+    padding: 8px 24px;
+    margin-right: 0.5em;
+    font-weight: 400;
+    font-family: 'Roboto','sans-serif';
+    font-size: 20px!important;
+    width: 80px;
+    height: 50px;
+    border-radius: 8px;
+    border: 0px solid transparent!important;
+}
+
+#qualify-no {
+    background-color: transparent;
+    color: #212529;
+    padding: 8px 24px;
+    margin-right: 0.5em;
+    font-weight: 400;
+    font-family: 'Roboto','sans-serif';
+    font-size: 20px!important;
+    width: 80px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #212529!important;
+}
+
+#qualify-step-yes p{
+    font-size: 28px;
+    color: #000;
+    font-family: 'Roboto','sans-serif';
+    margin-top: 36px;
+    font-weight: 600;
+    max-width: 600px;
+
+}
+#qualify-step-yes div {
+    background-color: #f68f87;
+    margin-top: 24px;
+    font-family: 'Roboto','sans-serif';
+    font-size: 20px;
+    padding: 8px 24px;
+    border-radius: 8px;
+    color: white;
+    width: 142px!important;
+    min-height: 48px!important;
+}
+
+#qualify-step-yes div a{
+    font-family: 'Roboto','sans-serif';
+    font-size: 20px;
+    color: white;
+    white-space: nowrap;
+}
+#qualify-step-no p {
+    font-size: 28px;
+    color: #000;
+    font-family: 'Roboto','sans-serif';
+    margin-top: 36px;
+    font-weight: 600;
+    max-width: 600px;
+}
+
+#qualify-step-no button {
+    background-color: #f68f87;
+    margin-top: 24px;
+    font-family: 'Roboto','sans-serif';
+    font-size: 20px;
+    padding: 8px 24px;
+    border-radius: 8px;
+    color: white;
+    width: 142px!important;
+    min-height: 48px!important;
+    border: none;
+}
