@@ -31,7 +31,7 @@ $(window).scroll(function() {
 
   
 // Show drop down
-var threeMonths, sixMonths,x,amount,totalWeeks,fivePercent,tenPercent;
+var threeMonths, sixMonths,x,amount,totalWeeks,fivePercent,tenPercent,perWeek;
 function showDropDown(){
      x = document.getElementById("drop");
     if (x.style.display === "none") {
@@ -93,7 +93,10 @@ function calculate(){
          document.getElementById("weeks").innerHTML= totalWeeks;
         fivePercent = (amount*5)/100;
              amount = parseInt(amount) + parseInt(fivePercent);
-         document.getElementById("weeklyPayment").innerHTML = "$"+ " " + amount;
+
+              perWeek = amount/totalWeeks;
+              console.log(perWeek)
+         document.getElementById("weeklyPayment").innerHTML = "$"+ " " + parseInt(perWeek);
          console.log(amount,totalWeeks)
     }
     else if(sixMonths){
@@ -101,7 +104,9 @@ function calculate(){
          document.getElementById("weeks").innerHTML= totalWeeks;
         tenPercent = (amount*10)/100;
         amount = parseInt(amount) + parseInt(tenPercent);
-         document.getElementById("weeklyPayment").innerHTML = "$"+ " " + amount;
+         perWeek = amount/totalWeeks;
+         console.log(perWeek)
+         document.getElementById("weeklyPayment").innerHTML = "$"+ " " + parseInt(perWeek);
          console.log(amount,totalWeeks)
     }
     else{
