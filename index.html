@@ -20,15 +20,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    
+    
+    <link rel="stylesheet" href="font/bootstrap-icons.css">
 </head>
-<body class="panel" data-color="white">
+<body class="panel" style="background-color: #FCE9DE;">
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="javsScript.js">
   </script>
 
 <div class="d-flex justify-content-center flex-column align-items-center w-100 bg-transparent" >
     <!-- navbar -->
-    <nav class="navbar xl:w-100 position-fixed margin-0 navbar navbar-expand-xl navbar-light fixed-top bg-white">
+    <!-- <nav class="navbar xl:w-100 position-fixed margin-0 navbar navbar-expand-xl navbar-light fixed-top bg-white">
         <div class="d-flex justify-content-between justify-content-xl-start w-100 margin-0 px-20">
             <a class=" navbar-brand" href="index.html"><img width="112px" height="19px" src="images/logo.png"></a>
 
@@ -59,33 +66,123 @@
                     </li>
                 </ul>
             </div>
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center ">
                 <form>
-                    <a href="https://app.phundhub.com/" class=" d-none d-xl-block text-16 btn btn-warning font-Roboto font-500 ">Apply</a>
+                    <a href="https://app.phundhub.com/" class="  text-16 btn btn-warning font-Roboto font-500 ">Apply</a>
                 </form>
-                <a href="https://app.phundhub.com/login" title="Company" class="d-none d-xl-block dropper  login-link font-Roboto text-black ">Log in</a>
-                <button class="hamburger hamburger--squeeze navbar-toggler ps-3 pt-2" type="button">
+                <a href="https://app.phundhub.com/login" title="Company" class=" dropper  login-link font-Roboto text-black ">Log in</a>
+                <button onclick="showHeaderDrop()" class="outline-0 border-0 hamburger hamburger--squeeze navbar-toggler ps-3 pt-2" type="button">
                     <span class="hamburger-box">
-                      <span class="hamburger-inner"></span>
+                      <span class="hamburger-inner">
+                        <svg  viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 35px; height: 35px;"><g class="style-scope yt-icon"><path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z" class="style-scope yt-icon"></path></g></svg>
+                      </span>
                     </span>
                   </button>
+                  <div id="header-drop" style="display: none;" class=" xl-d-none header-drop ">
+                    <a href="index.html" title="Revenue Funding" style="text-decoration: none;" class=" dropper active border-0   text-black font-Roboto text-18  hover  "> Revenue Funding</a>
+                    <hr class="my-10"/>
+                    <div class="dropdown w-100">
+                      <button onclick="ShowSubDropDown()" class="d-flex justify-content-between w-100 outline-0 padding-0 border-0 dropbtn text-black font-Roboto text-18  hover">Line of Credit <svg style="width: 20px; height:20px" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-down fa-w-14 fa-2x"><path fill="currentColor" d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" class=""></path></svg></button>
+                      <div id="subDropDown" style="display: none;" class="subDropDown flex-column font-Roboto">
+                        <a style="text-decoration: none;" class="text-dark my-6" href="#">Pricing</a>
+                        <a style="text-decoration: none;" class="text-dark my-6 " href="#">How It Works</a>
+                        <a style="text-decoration: none;" class="text-dark my-6 " href="#">Do I Qualify</a>
+                        <a style="text-decoration: none;" class="text-dark my-6" href="#">Calculator</a>
+                      </div>
+                    </div>
+                    <hr class="my-10"/>
+                    <a href="index.html" title="Revenue Funding" style="text-decoration: none;" class=" dropper active border-0   text-black font-Roboto text-18  hover  ">Company</a>
+                    <hr class="my-10"/>
+                  </div>
             </div>
         </div>
-    </nav>
+    </nav> -->
+
+    <nav class="w-100 navbar navbar-expand-md navbar-light fixed-top position-fixed">
+      <div class="w-100 padding-right-14 margin-0 max-w container-fluid">
+          <a class="w-65-m navbar-brand pl-14 p-8px" href="index.html"><img class="margin-top-2"  width="111.3px" height="19px" src="images/newlogo.png"></a>
+
+          <div class="hidden hide visible-sm-block navbar-collapse" id="ph-nav">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0 ps-md-4">
+                  <li class="nav-item">
+                      <span class="d-flex justify-content-between align-items-center">
+                          <a href="index.html" title="Revenue Funding" class="padding-y-8 dropper font-Roboto active nav-link">Revenue Funding</a>
+                          <span class="ph-sm-droopper"><i class="bi bi-chevron-down"></i></span>
+                      </span>
+                      <ul class="drop-me-dowm">
+                          <li><a class="dropdown-item hash font-Roboto" href="#s-pricing">Why us?</a></li>
+                          <li><a class="dropdown-item hash font-Roboto" href="#">Testimonials</a></li>
+                          <li><a class="dropdown-item hash font-Roboto" href="#s-work">How it works</a></li>
+                          <li><a class="dropdown-item hash font-Roboto" href="#s-qualify">Do I qualify?</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item ms-md-4 pl-24">
+                      <span class="d-flex justify-content-between align-items-center">
+                          <a href="pricing.html" title="Pricing" class="dropper padding-y-8 font-Roboto nav-link">Pricing</a>
+                          <span class="ph-sm-droopper"><i class="bi bi-chevron-down"></i></span>
+                      </span>
+                      <ul class="drop-me-dowm">
+                          <li><a class="dropdown-item font-Roboto" href="pricing.html#overview">Overview</a></li>
+                          <li><a class="dropdown-item font-Roboto" href="#s-calculator">Calculator</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item ms-md-4 pl-24">
+                      <span class="d-flex justify-content-between align-items-center">
+                          <a href="company.html" title="Company" class="dropper font-Roboto padding-y-8 nav-link">Company</a>
+                          <span class="ph-sm-droopper"><i class="bi bi-chevron-down"></i></span>
+                      </span>
+                      <ul class="drop-me-dowm">
+                          <li><a class="dropdown-item font-Roboto" href="company.html#about">About us</a></li>
+                          <li><a class="dropdown-item font-Roboto" href="company.html#faq">FAQ's</a></li>
+                          <li><a class="dropdown-item font-Roboto" href="company.html#blog">Blog</a></li>
+                          <li><a class="dropdown-item font-Roboto" href="company.html#contact">Contact us</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+          <div class="d-flex align-items-center">
+              <form>
+                  <a href="https://app.phundhub.com/"  class="btn apply-btn font-Roboto btn-warning">Apply</a>
+              </form>
+              <a href="https://app.phundhub.com/login" title="Company" class="dropper font-Roboto nav-link login-link " >Log in</a>
+              <button onclick="showHeaderDrop()" class="outline-0 border-0 hamburger hamburger--squeeze navbar-toggler ml-4 ml-md-0 ps-3 pt-2" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+                <div id="header-drop" style="display: none;" class=" xl-d-none header-drop ">
+                  <a href="index.html" title="Revenue Funding" style="text-decoration: none;" class=" dropper active border-0   text-black font-Roboto text-18  hover  "> Revenue Funding</a>
+                  <hr class="my-10"/>
+                  <div class="dropdown w-100">
+                    <button onclick="ShowSubDropDown()" class="d-flex justify-content-between w-100 outline-0 padding-0 border-0 dropbtn text-black font-Roboto text-18  hover">Line of Credit <svg style="width: 20px; height:20px" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-down fa-w-14 fa-2x"><path fill="currentColor" d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" class=""></path></svg></button>
+                    <div id="subDropDown" style="display: none;" class="subDropDown flex-column font-Roboto">
+                      <a style="text-decoration: none;" class="text-dark my-6" href="#s-pricing">Pricing</a>
+                      <a style="text-decoration: none;" class="text-dark my-6 " href="#s-work">How It Works</a>
+                      <a style="text-decoration: none;" class="text-dark my-6 " href="#s-qualify">Do I Qualify</a>
+                      <a style="text-decoration: none;" class="text-dark my-6" href="#s-calculator">Calculator</a>
+                    </div>
+                  </div>
+                  <hr class="my-10"/>
+                  <a href="index.html" title="Revenue Funding" style="text-decoration: none;" class=" dropper active border-0   text-black font-Roboto text-18  hover  ">Company</a>
+                  <hr class="my-10"/>
+                </div>
+          </div>
+      </div>
+  </nav>
 
     <!-- welcome section -->
-    <div   class=" d-flex w-100 justify-content-center bg-welcome-section mt-63">
-         <div class=" d-flex w-80 flex-column align-items-center">
-             <h1 class="text-100 text-92 font-Roboto font-900 text-center mt-68">Revolving credit for business growth or expenses</h1>
+    <div   class="boxShadow d-flex w-100 justify-content-center bg-welcome-section mt-63">
+         <div class="max-2500 d-flex w-80 flex-column align-items-center">
+             <h1 class="text-100 text-92 font-Roboto font-900 text-center mt-68 text-black">Revolving credit for business growth or expenses</h1>
              <lottie-player class="welcom-img" src="https://assets7.lottiefiles.com/packages/lf20_es7gqekm.json" background="transparent"  speed="1"  loop  autoplay></lottie-player>
              <!-- <img class="pt-32 pb-2 mr-80 welcom-img" width="775px" height="545px" src="images/welcomeSectionImg.png"> -->
          </div>
     </div>
 
     <!-- section-1 -->
-    <div data-color="lightBlue"  class=" panel bg-transparent d-flex w-100 justify-content-center  ">
-        <div class=" w-100 d-flex flex-column align-items-center">
-            <h1 class="font-Roboto font-900 text-100 mt-103">
+    <div id="s-pricing" data-color="lightBlue"  class=" boxShadow panel bg-transparent d-flex w-100 justify-content-center  ">
+        <div class="max-2500 w-100 d-flex flex-column align-items-center">
+            <h1 class="w-75-lg font-Roboto font-900 text-100 mt-103 text-black">
                 Pricing made simple 
             </h1>
             <div class="w-90 d-flex flex-column align-items-center ">
@@ -141,9 +238,9 @@
     </div>
 
    <!-- section-2 -->
-   <div data-color="pink" class="bg-transparent panel w-100 ">
+   <div id="s-work" data-color="pink" class="boxShadow bg-transparent panel w-100 ">
        <!-- Slider -->
-       <div class="w-100">
+       <div class="max-2500 w-100">
         <div id="myCarousel" class="carousel slide w-100 " data-ride="carousel">
           
       
@@ -151,17 +248,17 @@
           <div class="carousel-inner">
             <!-- 1st slide -->
             <div class="item active  ">
-              <div class="d-flex justify-content-center  w-100">
+              <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start  justify-content-center  w-100">
                   <!-- slider img -->
                   <div class="position-relative mt-128 mb-141">   
                   <img class="slider-img" width="712" height="581" src="./images/sliderImg.png"  />
                   <img   class="position-absolute left-0 slider-img" width="712" height="581" src="./images/sliderImg-1.png"  />
                 </div>
                     <!-- slider content -->
-                     <div class="ml-90 w-40 w-34 ">
-                         <h1 class="text-100 font-900 font-Roboto mt-170  ">How it works?    </h1>
-                         <h2 class="text-28 font-weight-bold font-Roboto text-black text-black margin-0 pt-5 pb-2">Apply seamlessly in just minutes </h2>
-                         <p class="line-height-30 font-Roboto text-black">
+                     <div class="ml-90 w-87 w-40 w-34 ">
+                         <h1 class="text-100 font-900 font-Roboto mt-170 text-black  ">How it works?    </h1>
+                         <h2 class="text-28 font-500 xl-font-weight-bold font-Roboto text-black text-black margin-0 pt-5 pb-3 xl-pb-2">Apply seamlessly in just minutes </h2>
+                         <p class="line-height-30 font-Roboto text-black pb-4 pb-lg-0">
                           Give us a look inside your business so we can
                           provide a quick funding decision. First, share some 
                          basic information about yourself and your business. 
@@ -176,17 +273,17 @@
             </div>
             <!-- 2nd slide -->
             <div class="item   ">
-              <div class="d-flex justify-content-center  w-100">
+              <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center  w-100">
                   <!-- slider img -->
                   <div class="position-relative mt-128 mb-141">   
                   <img class="slider-img" width="712" height="581" src="./images/sliderImg.png"  />
                   <img   class="position-absolute left-0 slider-img" width="712" height="581" src="./images/sliderImg-1.png"  />
                 </div>
                     <!-- slider content -->
-                     <div class="ml-90 w-40 w-34 position-relative">
-                         <h1 class="text-100 font-900 font-Roboto  mt-170  ">How it works?    </h1>
+                     <div class="ml-90 w-87 w-40 w-34 position-relative">
+                         <h1 class="text-100 font-900 font-Roboto  mt-170 text-black  ">How it works?    </h1>
                          <h2 class="text-28 font-weight-bold font-Roboto text-black margin-0 pt-5 pb-2">Apply seamlessly in just minutes </h2>
-                         <p class="line-height-30 font-Roboto text-black">
+                         <p class="line-height-30 font-Roboto text-black pb-4 pb-lg-0">
                           Give us a look inside your business so we can
                           provide a quick funding decision. First, share some 
                          basic information about yourself and your business. 
@@ -201,17 +298,17 @@
             </div>
            <!-- 3rd slide -->
             <div class="item  ">
-              <div class="d-flex justify-content-center  w-100">
+              <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center  w-100">
                   <!-- slider img -->
                   <div class="position-relative mt-128 mb-141">   
                   <img class="slider-img" width="712" height="581" src="./images/sliderImg.png"  />
                   <img   class="position-absolute left-0 slider-img" width="712" height="581" src="./images/sliderImg-1.png"  />
                 </div>
                     <!-- slider content -->
-                     <div class="ml-90 w-40 w-34 position-relative">
-                         <h1 class="text-100 font-900 font-Roboto  mt-170  ">How it works?    </h1>
+                     <div class="ml-90 w-87 w-40 w-34 position-relative">
+                         <h1 class="text-100 font-900 font-Roboto  mt-170 text-black  ">How it works?    </h1>
                          <h2 class="text-28 font-weight-bold font-Roboto text-black margin-0 pt-5 pb-2">Apply seamlessly in just minutes </h2>
-                         <p class="line-height-30 font-Roboto text-black">
+                         <p class="line-height-30 font-Roboto text-black pb-4 pb-lg-0">
                           Give us a look inside your business so we can
                           provide a quick funding decision. First, share some 
                          basic information about yourself and your business. 
@@ -228,7 +325,7 @@
           </div>
            <!-- Left and right controls -->
           <div class="position-absolute w-112 slider-indecator">
-            <a class="text-black  h4" href="#myCarousel" data-slide="prev">
+            <a class="text-black h5 xxl-h4" href="#myCarousel" data-slide="prev">
              <span class="glyphicon glyphicon-chevron-left"></span>
              <span class="sr-only">Previous</span>
            </a>
@@ -240,7 +337,7 @@
              <li data-target="#myCarousel" data-slide-to="2" class="ml-2"></li>
            </ol>
 
-           <a class="h4 ml-70 text-black" href="#myCarousel" data-slide="next">
+           <a class="h5 xxl-h4 margin-0 ml-70 text-black" href="#myCarousel" data-slide="next">
              <span class="glyphicon glyphicon-chevron-right"></span>
              <span class="sr-only">Next</span>
            </a>
@@ -251,16 +348,16 @@
       </div>
    </div>
    <!-- section-3 -->
-   <div data-color="darkBlue" class="panel bg-transparent w-100 d-flex justify-content-center">  
-      <div class="w-80-1536 w-72 d-flex justify-content-between">
+   <div id="s-qualify" data-color="darkBlue" class="boxShadow panel bg-transparent w-100 d-flex justify-content-center">  
+      <div class="max-2500 w-82-992 w-80-1536 w-72 d-flex flex-column-reverse flex-lg-row justify-content-between">
         <div>
-          <h1 class="text-100 font-Roboto font-900 text-white mt-225">Do I Qualify?</h1>
-          <p class="line-height-30 font-Roboto text-white mt-4">
+          <h1 class="text-100 font-s-80 font-Roboto font-900 text-white mt-225 ">Do I qualify?</h1>
+          <p class="line-height-30 font-Roboto text-white mt-48  mt-4">
             Find out if your business is eligible for funding
           </p>
           <button class="btn btn-start text-white font-Roboto mt-9">
             Start 
-            <svg class="ml-1 mb-4" width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg style="width: 13px;height:16px" class="ml-1 mb-4" width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z" fill="white"/>
               </svg>
               
@@ -274,28 +371,29 @@
    </div>
 
    <!-- section-4 -->
-    <div data-color="lightRed" class="panel bg-transparent w-100 d-flex flex-column align-items-center">
-        <div>
-          <h1 class="text-100 font-Roboto font-900 text-white mt-80 text-center">
+    <div id="s-calculator" data-color="lightRed" class="boxShadow panel bg-transparent w-100 d-flex flex-column align-items-center">
+        <div class="max-2500 d-flex justify-content-center justify-content-md-start">
+          <h1 class="w-96-m font-s-70 text-100 font-Roboto font-900 text-black mt-80 text-center">
             Let’s crunch some numbers 
             </h1>
         </div>
-        <div class=" d-flex justify-content-between">  
-          <div>
-            <p class="line-height-30 font-Roboto font-500 text-black mt-99">
+        <div class=" d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-md-start">  
+          <div class="d-flex align-items-center flex-column  align-items-md-start">
+            <p class="line-height-30 font-Roboto  text-black mt-99">
               Type the amount you’d like 
             </p>
             <div class="d-flex amount-input mt-1">
               <p class="d-flex justify-content-center align-items-center font-Roboto   amount-input-1">$</p>
               <input id="amount" class="input-1 font-Roboto text-black px-3" type="number" />
             </div>
-            <p class="line-height-30 font-Roboto font-500 text-black mt-4">
+            <p class="line-height-30 font-Roboto pt-2 pt-lg-0  text-black mt-4">
               Payback length 
             </p>
-         <!-- Dropdown -->
+         
+         
              
-            <div className=' amount-input '>
-              <button  onclick="showDropDown()" class="d-flex justify-content-between align-items-center px-21 border-0 dropdown-color outline-0  amount-input font-Roboto " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class=' position-realtive amount-input '>
+              <button  onclick="showDropDown()" class="d-flex justify-content-between align-items-center px-21 amount-input2  dropdown-color outline-0  amount-input font-Roboto " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 3 months 
                 <svg class="w-10 h-10" width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M2.2796 0.625H16.7204C16.9759 0.626071 17.2253 0.702867 17.4371 0.845677C17.6489 0.988487 17.8136 1.1909 17.9104 1.42732C18.0072 1.66373 18.0317 1.92354 17.9808 2.17388C17.9299 2.42422 17.806 2.65386 17.6246 2.83375L10.4171 10.0412C10.297 10.1623 10.1542 10.2584 9.99676 10.324C9.83936 10.3896 9.67053 10.4233 9.50001 10.4233C9.3295 10.4233 9.16067 10.3896 9.00327 10.324C8.84587 10.2584 8.70301 10.1623 8.58293 10.0412L1.37543 2.83375C1.19405 2.65386 1.07009 2.42422 1.01922 2.17388C0.968347 1.92354 0.992848 1.66373 1.08963 1.42732C1.18641 1.1909 1.35112 0.988487 1.56293 0.845677C1.77474 0.702867 2.02414 0.626071 2.2796 0.625Z" fill="#9D9D9D"/>
@@ -303,7 +401,7 @@
                   
               </button>
                
-                <div id="drop" style="display: none;" class="bg-white w-768 h-75 overflow-auto " >
+                <div id="drop" style="display: none;z-index: 10;" class="position-absolute bg-white w-768 overflow-auto " >
                   <button id="3month" onclick="get3Month()" value="3"  class="dropdown-item px-21  font-Roboto  font-500 py-3" >3 months</button>
                   <button id="6month" onclick="get6Month()" value="6"   class="dropdown-item px-21 font-Roboto  font-500 py-3" >6 months</button>
                  
@@ -315,14 +413,14 @@
             
 
             <!-- Calculate btn -->
-            <div class="w-100 d-flex justify-content-center">
-              <button onclick="calculate()" class="btn calculate-btn font-Roboto line-height-30 text-white mt-38 mt-40 mb-100 mb-150 mb-200">Calculate</button>
+            <div  class="w-100 d-flex justify-content-center">
+              <button onclick="calculate()" style="z-index: 1;" class="btn calculate-btn font-Roboto line-height-30 text-white mt-38 mt-40 mb-100 mb-150 mb-200">Calculate</button>
             </div>
               
           </div>
   
 
-          <div class="output d-flex justify-content-between mt-140 ml-108">
+          <div class="w-100-lg output d-flex justify-content-between mt-140 ml-108 mb-3 mb-lg-0">
            <div class="w-50">
             <p class="font-Roboto line-height-30 text-black font-500 mt-4 ml-35 ">
               Weekly payment
@@ -331,7 +429,7 @@
               $
             </p>
           </div>
-            <p class="border-solid"></p>
+            <p class="border-solid my-4"></p>
             <div class="w-50"> 
               <p class="font-Roboto line-height-30 text-black font-500 mt-4 ml-35 ">
                 Total number of payments
@@ -345,7 +443,7 @@
     </div>
 
     <!-- footer -->
-    <footer class="pt-5 footer w-100  font-Roboto position-relative">
+    <footer class="w-100 margin-0 padding-0 border-0 boxShadow pt-5 footer w-100  font-Roboto position-relative">
       <div class="container-fluid w-90">
           <div class="row ">
               <div class="col-lg-6 ">
@@ -393,11 +491,11 @@
               </div>
           </div>
       </div>
-      <div class="messages d-flex justify-content-center align-items-center">
-        <svg focusable="false" aria-hidden="true" viewBox="0 0 28 32" width="28" height="32"><path d="M28,32 C28,32 23.2863266,30.1450667 19.4727818,28.6592 L3.43749107,28.6592 C1.53921989,28.6592 0,27.0272 0,25.0144 L0,3.6448 C0,1.632 1.53921989,0 3.43749107,0 L24.5615088,0 C26.45978,0 27.9989999,1.632 27.9989999,3.6448 L27.9989999,22.0490667 L28,22.0490667 L28,32 Z M23.8614088,20.0181333 C23.5309223,19.6105242 22.9540812,19.5633836 22.5692242,19.9125333 C22.5392199,19.9392 19.5537934,22.5941333 13.9989999,22.5941333 C8.51321617,22.5941333 5.48178311,19.9584 5.4277754,19.9104 C5.04295119,19.5629428 4.46760991,19.6105095 4.13759108,20.0170667 C3.97913051,20.2124916 3.9004494,20.4673395 3.91904357,20.7249415 C3.93763774,20.9825435 4.05196575,21.2215447 4.23660523,21.3888 C4.37862552,21.5168 7.77411059,24.5386667 13.9989999,24.5386667 C20.2248893,24.5386667 23.6203743,21.5168 23.7623946,21.3888 C23.9467342,21.2215726 24.0608642,20.9827905 24.0794539,20.7254507 C24.0980436,20.4681109 24.0195551,20.2135019 23.8614088,20.0181333 Z" fill='white'></path></svg>
-      </div>
+      
   </footer>
-         
+  <div class="messages d-flex justify-content-center align-items-center">
+    <svg style="width:28px; height:32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32"><path fill="white" d="M28 32s-4.714-1.855-8.527-3.34H3.437C1.54 28.66 0 27.026 0 25.013V3.644C0 1.633 1.54 0 3.437 0h21.125c1.898 0 3.437 1.632 3.437 3.645v18.404H28V32zm-4.139-11.982a.88.88 0 00-1.292-.105c-.03.026-3.015 2.681-8.57 2.681-5.486 0-8.517-2.636-8.571-2.684a.88.88 0 00-1.29.107 1.01 1.01 0 00-.219.708.992.992 0 00.318.664c.142.128 3.537 3.15 9.762 3.15 6.226 0 9.621-3.022 9.763-3.15a.992.992 0 00.317-.664 1.01 1.01 0 00-.218-.707z"></path></svg>
+  </div>
 
    
     

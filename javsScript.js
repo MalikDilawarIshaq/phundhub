@@ -43,6 +43,36 @@ function showDropDown(){
     }
 }
 
+
+// header drop down
+
+function showHeaderDrop(){
+  var y = document.getElementById("header-drop");
+  if (y.style.display === "none") {
+     
+    y.style.display = "block";
+  } else {
+      console.log("hide")
+    y.style.display = "none";
+  }
+}
+
+// header Sub drop down
+
+function ShowSubDropDown(){
+  var z = document.getElementById("subDropDown");
+  if (z.style.display === "none") {
+     
+    z.style.display = "flex";
+  } else {
+      console.log("hide")
+    z.style.display = "none";
+  }
+}
+
+
+
+
 function get3Month(){
     threeMonths = parseInt(document.getElementById("3month").value);
     document.getElementById("dropdownMenuButton").innerHTML= "3 Months";
@@ -85,3 +115,5 @@ function calculate(){
  amount = document.getElementById("amount").value = " ";
  document.getElementById("dropdownMenuButton").innerHTML= "3 months ";
 }
+
+

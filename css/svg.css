@@ -1,0 +1,500 @@
+#small-rounder {
+    animation: rotate 20s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#medium-rounder,
+#rounds-2,
+#rounds-1 {
+    animation: rotate 15s infinite linear reverse;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#split-rounder-1 {
+    animation: rotate 60s infinite linear reverse;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#split-rounder-2 {
+    animation: rotate 60s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#leaf-1,
+#b-leaf-2,
+#faq-bleaf-2,
+#faq-lead-3,
+#big-leaf-1,
+#man {
+    animation: sway 5s infinite linear alternate;
+    transform-origin: right bottom;
+    transform-box: fill-box;
+}
+
+#faq-leaf-1 {
+    animation: sway 3s infinite linear alternate;
+    transform-origin: right bottom;
+    transform-box: fill-box;
+}
+
+#faq-lead-2,
+#big-leaf-2 {
+    animation: sway 4s infinite linear alternate;
+    transform-origin: left bottom;
+    transform-box: fill-box;
+}
+
+#leaf-2,
+#faq-bleaf-1 {
+    animation: sway 10s infinite linear alternate;
+    transform-origin: right bottom;
+    transform-box: fill-box;
+}
+
+#leaf-2_2 {
+    animation: sway 3s 1s infinite ease alternate;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+
+#plant-1,
+#b-leaf-1,
+#bplants,
+#pr-leaves {
+    animation: sway 2s infinite ease alternate;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+
+#plant-2 {
+    animation: sway 4s 1s infinite ease alternate;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+
+#t-up,
+#Vector_78,
+#q-top {
+    animation: flash 1s infinite linear alternate;
+    transform-origin: right top;
+    transform-box: fill-box;
+}
+
+#arrow {
+    animation: dflash 5s infinite linear;
+    transform-origin: center center;
+    transform-box: fill-box;
+}
+
+#bar-1 {
+    animation: grow 1s, scaleupdown 3s 3s infinite alternate;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+
+#bar-2 {
+    animation: grow 2s, scaleupdown 4s 2s infinite alternate;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+
+#bar-3,
+#m-3 {
+    animation: grow 3s, scaleupdown 5s 3s infinite alternate;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+
+#circler {
+    animation: dfadein2 5s .5s infinite linear, rotate 1s infinite linear;
+    transform-origin: center center;
+    transform-box: fill-box;
+    opacity: 0;
+}
+
+@keyframes dfadein2 {
+    0%,
+    9%,
+    30% {
+        opacity: 0;
+    }
+    9%,
+    29% {
+        opacity: 1;
+    }
+}
+
+#button {
+    animation: dfadein 5s infinite ease, dbeat2 5s infinite ease;
+    transform-origin: center center;
+    transform-box: fill-box;
+}
+
+#check {
+    fill: none;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: check 5s 2s ease-out infinite;
+    opacity: 0;
+}
+
+#check-2 {
+    fill: none;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: check 5s 3.5s ease-out infinite;
+    opacity: 0;
+}
+
+
+/* @keyframes check {
+    0% {
+        stroke-dashoffset: 150;
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    30%,
+    31% {
+        stroke-dashoffset: 0;
+    }
+    60% {
+        stroke-dashoffset: -150;
+        opacity: 1;
+    }
+    61% {
+        opacity: 0;
+    }
+    80% {
+        stroke-dashoffset: 150;
+        opacity: 0;
+    }
+} */
+
+@keyframes check {
+    0% {
+        stroke-dashoffset: 200;
+        opacity: 1;
+    }
+    30% {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    41% {
+        opacity: 0;
+    }
+    50% {
+        stroke-dashoffset: 200;
+        opacity: 0;
+    }
+}
+
+#tick {
+    animation: dfadein2 6s 3s infinite linear, dbeat 6s 2s infinite ease;
+    transform-origin: center center;
+    transform-box: fill-box;
+    opacity: 0;
+}
+
+#megaphone,
+#bubble-big,
+#price {
+    animation: up 5s ease infinite alternate;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+
+#heart {
+    animation: beat 1s infinite ease;
+    transform-origin: center center;
+    transform-box: fill-box;
+}
+
+#bubble {
+    animation: up 4s ease infinite alternate;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+
+#graph-1 {
+    animation: up 1s ease, fadein 1s ease;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+
+#graph-2 {
+    animation: up 2s ease, fadein 2s ease;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+
+#bbox {
+    animation: flash .6s linear infinite alternate;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+
+#Vector_65,
+#Vector_66 {
+    animation: delayedsway 6s linear infinite;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+
+#Vector_79 {
+    animation: delayedsway 5s linear infinite;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+
+#man-head,
+#pr-man-head,
+#gbody {
+    animation: delayedsway 5s linear infinite alternate;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+
+#tick-1 {
+    animation: fadein 4s infinite, flash 3s infinite;
+}
+
+#tick-2 {
+    animation: fadein 4s 1s infinite, flash 3s 1s infinite;
+}
+
+#tick-3 {
+    animation: fadein 4s 2s infinite, flash 3s 2s infinite;
+}
+
+#girl-hand {
+    animation: delayedsway 2s infinite alternate;
+    transform-origin: left top;
+    transform-box: fill-box;
+}
+
+#boot {
+    animation: delayedsway 2s infinite alternate;
+    transform-origin: right top;
+    transform-box: fill-box;
+}
+
+#Character {
+    animation: flash 3s linear infinite alternate, type 2s linear infinite alternate;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+
+.carrier {
+    animation: sway 20s linear infinite alternate;
+    transform-origin: center center;
+    transform-box: fill-box;
+    left: 5%;
+    width: 100%;
+    height: auto;
+}
+
+
+/* .carrier svg {
+    height: 100%;
+} */
+
+#m-1 {
+    animation: fadein 2s infinite alternate;
+}
+
+#m-4 {
+    animation: fadein 3s 0s infinite alternate;
+}
+
+#m-2 {
+    animation: rotate 10s infinite linear;
+    transform-origin: center center;
+    transform-box: fill-box;
+}
+
+#m-5 {
+    animation: rotate 5s infinite reverse;
+    transform-origin: center center;
+    transform-box: fill-box;
+}
+
+#man-hand,
+#man-hand-2 {
+    animation: flash .6s ease infinite alternate;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+
+#man-hand-3,
+#boot-2 {
+    animation: type .3s .3s ease infinite alternate;
+    transform-origin: right top;
+    transform-box: fill-box;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes sway {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(-5deg);
+    }
+}
+
+@keyframes type {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(-1deg);
+    }
+}
+
+@keyframes delayedsway {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    20% {
+        transform: rotateZ(-6deg);
+    }
+    100% {
+        transform: rotateZ(-5deg);
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes scaleupdown {
+    0% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(.8);
+    }
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.2);
+    }
+    20% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.2);
+    }
+    40% {
+        transform: scale(1);
+    }
+}
+
+@keyframes dbeat {
+    0% {
+        transform: scale(1);
+    }
+    4% {
+        transform: scale(1.2);
+    }
+    8% {
+        transform: scale(1);
+    }
+    12% {
+        transform: scale(1.2);
+    }
+    16% {
+        transform: scale(1);
+    }
+}
+
+@keyframes dbeat2 {
+    0% {
+        transform: scale(1);
+    }
+    4% {
+        transform: scale(1.2);
+    }
+    8% {
+        transform: scale(1);
+    }
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(20%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes flash {
+    0%,
+    100% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(1%);
+    }
+}
+
+@keyframes dflash {
+    0%,
+    10% {
+        transform: translateY(0%);
+    }
+    5% {
+        transform: translateY(1%);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dfadein {
+    0% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
