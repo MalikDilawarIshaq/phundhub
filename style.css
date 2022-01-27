@@ -854,7 +854,7 @@ a#bbblink.rbhzbus {
     }
     .drop-me-dowm {
         position: absolute;
-        left: 0px;
+        left: -24px;
         top: 55px;
         margin: 0;
         padding: 20px 50px 20px 30px;
@@ -872,7 +872,7 @@ a#bbblink.rbhzbus {
         left: 76px;
         top: -20px;
         position: absolute;
-        content: url(images/up-menu.png);
+        content: url(images/arrow.png);
     }
     #testimonials svg.t-svg {
         max-width: 510px;
