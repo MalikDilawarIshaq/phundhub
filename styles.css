@@ -252,7 +252,8 @@ body {
         margin-top: 48px!important;
 }
     .font-s-80{
-        font-size: 50px!important;
+        font-size: 56px!important;
+        line-height: 1.1em;
     }
     .w-80{
         width: 74%!important;
@@ -333,10 +334,12 @@ body {
         margin-top: 20px!important;
         margin-bottom: 0px!important;
     }
-    
+    .w-81-m{
+        width: 81%;
+    }
     .text-20{
         font-size: 20px;
-        line-height: 20px;
+        
     }
     .text-black{
         color: black;
@@ -565,8 +568,14 @@ body {
     }
     .text-18-head{
         font-size: 18px!important;
+        
     }
-
+    .line-h{
+    line-height: 20px;
+    }
+    .font-semibold{
+        font-weight: 500!important;
+    }
     .text-13px{
         font-size: 13px!important;
     }
