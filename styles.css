@@ -230,14 +230,6 @@ body {
          background: #FCE9DE;
     
         }
-    
-         /* <!-- section-1 --> */
-     
-     
-     /* .welcom-img{
-         width: 620px;
-         height: 410px;
-     } */
     .mt-63{
         margin-top: 60px;
     }
@@ -321,7 +313,7 @@ body {
         background-repeat: no-repeat;
     }
     .pt-6 {
-        padding-top: 6px;
+        padding-top: 24px;
     }
     .w-75-lg{
         width: 75%;
@@ -679,14 +671,6 @@ body {
          background: #FCE9DE;
     
         }
-    
-         /* <!-- section-1 --> */
-     
-     
-     /* .welcom-img{
-         width: 620px;
-         height: 410px;
-     } */
     .mt-63{
         margin-top: 60px;
     }
@@ -1115,8 +1099,8 @@ body {
      
      
      .welcom-img{
-         width: 620px;
-         height: 410px;
+         width: 650px;
+         height: 440px;
      }
     .mt-63{
         margin-top: 60px;
@@ -1533,8 +1517,8 @@ body {
      
      
      .welcom-img{
-         width: 620px;
-         height: 410px;
+         width: 640px;
+         height: 430px;
      }
     .mt-63{
         margin-top: 60px;
@@ -1935,8 +1919,8 @@ body {
      
      
      .welcom-img{
-         width: 620px;
-         height: 410px;
+         width: 640px;
+         height: 430px;
      }
     .mt-63{
         margin-top: 60px;
@@ -2336,8 +2320,8 @@ body {
      
      
      .welcom-img{
-         width: 670px;
-         height: 470px;
+         width: 690px;
+         height: 490px;
      }
     .mt-63{
         margin-top: 60px;
@@ -2736,8 +2720,8 @@ body {
          /* <!-- section-1 --> */
      }
      .welcom-img{
-        width: 725px;
-        height: 495px;
+        width: 830px;
+        height: 670px;
     }
      
     .mt-63{
@@ -3133,8 +3117,8 @@ body {
          /* <!-- section-1 --> */
      }
      .welcom-img{
-        width: 775px;
-        height: 545px;
+        width: 825px;
+        height: 720px;
     }
      
     .mt-63{
@@ -3539,4 +3523,9 @@ body {
     width: 142px!important;
     min-height: 48px!important;
     border: none;
+}
+@media (max-width: 575px) {
+    .remove-margin {
+        margin-top: 0px!important;
+    }
 }
