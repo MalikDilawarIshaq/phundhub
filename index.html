@@ -557,15 +557,12 @@
                 data-aos="fade-up" data-aos-easing="ease-in-out"
                     class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-md-start calculator_inner">
                     <div class="w-small-100 d-flex align-items-center flex-column align-items-md-start">
-                        <p class="w-100 input__label line-height-30 font-Roboto text-black mt-99">
+                        <p class="w-100 input__label line-height-30 mt-3-rem font-Roboto text-black mt-99">
                             Type the amount you’d like
                         </p>
-                        <div class="d-flex amount-input mt-1">
-                            <p
-                                class="d-flex justify-content-center align-items-center font-Roboto amount-input-1">
-                                $
-                            </p>
-                            <input id="amount" class="input-1 font-Roboto text-black px-3" type="number"/>
+                        <div class="amount-container">
+                            <p>$</p>
+                            <input id="amount" type="number" placeholder="0"/>
                         </div>
                         <p class="w-100 input__label line-height-30 font-Roboto pt-2 pt-lg-0 text-black mt-4">
                             Payback length
@@ -573,7 +570,7 @@
                         <div class="position-realtive amount-input">
                             <button
                                 onclick="showDropDown()"
-                                class="d-flex justify-content-between align-items-center px-21 amount-input2 dropdown-color outline-0 amount-input font-Roboto"
+                                class="d-flex custom-dropdown justify-content-between align-items-center px-21 amount-input2 dropdown-color outline-0 amount-input font-Roboto"
                                 type="button"
                                 id="dropdownMenuButton"
                                 data-toggle="dropdown"
@@ -625,7 +622,7 @@
                     </div>
                     <div class="d-flex flex-column width-50-percent w-100-lg">
                       <div
-                      class="w-100 output  d-flex justify-content-between border-for-calculator mt-140 mb-3 mb-lg-0">
+                      class="w-100 custom-container output mt-6-rem d-flex justify-content-between border-for-calculator mt-140 mb-3 mb-lg-0">
                       <div class="w-50">
                             <p class="font-Roboto input_inner_label line-height-30 text-black font-500 mt-4 ml-35">
                                 Weekly payment
@@ -633,7 +630,7 @@
                             <p
                                 id="weeklyPayment"
                                 class="font-Roboto input_inner_price_label line-height-30 text-black font-500 mt-4 ml-35">
-                                $
+                                $0
                             </p>
                         </div>
                         <p class="border-solid my-4"></p>
@@ -641,7 +638,7 @@
                             <p class="font-Roboto input_inner_label line-height-30 text-black font-500 mt-4 ml-35">
                                 Total number of payments
                             </p>
-                            <p id="weeks" class="font-Roboto input_inner_price_label line-height-30 text-black font-500 mt-4 ml-35"></p>
+                            <p id="weeks" class="font-Roboto input_inner_price_label line-height-30 text-black font-500 mt-4 ml-35">0</p>
                         </div>
                       </div>
                       <div id="to-hide-apply" class="w-100" style="display: none;">
