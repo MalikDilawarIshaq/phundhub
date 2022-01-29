@@ -88,6 +88,8 @@ function calculate(){
     amount = document.getElementById("amount").value;
  if(amount){
     if(threeMonths){
+      document.getElementById('to-hide-apply').style.display = "flex";
+      document.getElementById('to-hide-apply').style.justifyContent = "center";
          totalWeeks = threeMonths*4;
          document.getElementById("weeks").innerHTML= totalWeeks;
         fivePercent = (amount*5)/100;
@@ -99,6 +101,8 @@ function calculate(){
          console.log(amount,totalWeeks)
     }
     else if(sixMonths){
+      document.getElementById('to-hide-apply').style.display = "flex";
+      document.getElementById('to-hide-apply').style.justifyContent = "center";
         totalWeeks = sixMonths*4;
          document.getElementById("weeks").innerHTML= totalWeeks;
         tenPercent = (amount*10)/100;

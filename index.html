@@ -569,7 +569,6 @@
                         <p class="w-100 input__label line-height-30 font-Roboto pt-2 pt-lg-0 text-black mt-4">
                             Payback length
                         </p>
-
                         <div class="position-realtive amount-input">
                             <button
                                 onclick="showDropDown()"
@@ -613,7 +612,6 @@
                                 </button>
                             </div>
                         </div>
-
                         <!-- Calculate btn -->
                         <div class="w-100 d-flex justify-content-center">
                             <button
@@ -624,8 +622,9 @@
                             </button>
                         </div>
                     </div>
-                    <div
-                        class="width-50-percent w-100-lg output d-flex justify-content-between mt-140 ml-108 mb-3 mb-lg-0">
+                    <div class="d-flex flex-column width-50-percent w-100-lg">
+                      <div
+                        class="w-100 output d-flex justify-content-between mt-140 ml-108 mb-3 mb-lg-0">
                         <div class="w-50">
                             <p class="font-Roboto input_inner_label line-height-30 text-black font-500 mt-4 ml-35">
                                 Weekly payment
@@ -643,6 +642,16 @@
                             </p>
                             <p id="weeks" class="font-Roboto input_inner_price_label line-height-30 text-black font-500 mt-4 ml-35"></p>
                         </div>
+                      </div>
+                      <div id="to-hide-apply" class="w-100" style="display: none;">
+                        <a
+                            href="https://app.phundhub.com/"
+                            target="_blank"
+                            style="z-index: 1"
+                            class="btn calculate-btn apply-button font-Roboto line-height-30 text-white mt-38 mt-40 mb-100 mb-150 mb-200">
+                            Apply
+                      </a>
+                    </div>
                     </div>
                 </div>
             </div>

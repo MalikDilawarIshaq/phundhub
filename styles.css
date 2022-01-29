@@ -3651,6 +3651,14 @@ body {
     height: 48px!important;
     width: 117px!important
 }
+.apply-button {
+    font-size: 20px!important;
+    line-height: 30px!important;
+    text-align: center!important;
+    background-color: #fd7f39!important;
+    height: 48px!important;
+    width: 117px!important;
+}
 
 @media (min-width: 1440px) {
     .width-50-percent {
@@ -3808,6 +3816,14 @@ body {
         line-height: 30px!important;
         text-align: center!important;
         background-color: #3e6f78!important;
+        height: 48px!important;
+        width: 117px!important
+    }
+    .apply-button {
+        font-size: 20px!important;
+        line-height: 30px!important;
+        text-align: center!important;
+        background-color: #fd7f39!important;
         height: 48px!important;
         width: 117px!important
     }
