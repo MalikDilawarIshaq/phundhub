@@ -2063,7 +2063,7 @@ body {
     }
     .slider-indecator{
         right: 0%;
-        bottom: 22%;
+        bottom: 17%;
     }
     .slider-img{
         width: 520px;
@@ -2474,7 +2474,7 @@ body {
     }
     .slider-indecator{
         right: 0%;
-        bottom: 28%;
+        bottom: 22%;
     }
     .slider-img{
         width: 600px;
@@ -2871,7 +2871,7 @@ body {
     }
     .slider-indecator{
         right: 0%;
-        bottom: 32%;
+        bottom: 26%;
     }
     .slider-img{
         width: 600px;
@@ -3252,7 +3252,7 @@ body {
     }
     .slider-indecator{
         right: 0%;
-        bottom: 34%;
+        bottom: 20%;
     }
     .slider-img{
         width: 712px;
@@ -3479,7 +3479,6 @@ body {
     border-radius: 8px;
     border: 1px solid #212529!important;
 }
-
 #qualify-step-yes p{
     font-size: 28px;
     color: #000;
@@ -3536,11 +3535,11 @@ body {
 
 .first-section {
     margin-top: 248px!important;
+    overflow: hidden!important;
 }
 .first-section h1 {
-    font-size: 64.67px!important;
+    font-size: 5.8vw!important;
     font-weight: 900!important;
-    line-height: 64.67px!important;
     margin: 0px!important;
 }
 .first-section .first-section-animations {
@@ -3556,14 +3555,13 @@ body {
     margin: 0px!important;
 }
 .second-section h1 {
-    font-size: 64.67px!important;
+    font-size: 5.8vw!important;
     font-weight: 900!important;
-    line-height: 64.67px!important;
     margin: 0px!important;
 }
 .pricing_section_container_1 , .pricing_section_container_2 {
     padding: 0px!important;
-    justify-content: space-around!important;
+    justify-content: center!important;
     margin-top: 32px!important;
 }  
 .second-section img {
@@ -3582,12 +3580,10 @@ body {
     margin-top: 6px!important;
 }
 .slider-container .slider__heading{
-    font-size: 64.67px!important;
-    line-height: 64.67px!important;
+    font-size: 5.8vw!important;
 }
 .slider-container .slider__sub-heading{
-    font-size: 31.235px!important;
-    line-height: 37.42px!important;
+    font-size: 32px!important;
     margin: 0px!important;
     font-weight: 500!important;
     margin-top: 48px!important;
@@ -3598,8 +3594,7 @@ body {
     margin: 0px!important;
 } 
 .section-qualify h1 {
-    font-size: 86px!important;
-    line-height: 80px!important;
+    font-size: 100px!important;
 }
 .section-qualify p {
     font-size: 20px!important;
@@ -3620,10 +3615,12 @@ body {
     font-size: 70px;
     line-height: 70px;
     font-weight: 900;
+    margin: 0px!important;
 }
 .calculator_inner {
     width: 100%!important;
     max-width: 990px!important;
+    overflow-x: hidden;
 }
 .width-50-percent {
     width: 50%!important;
@@ -3667,7 +3664,7 @@ body {
     .calculator_inner {
         width: 100%!important;
         max-width: 1400px!important;
-        justify-content: center!important;
+        justify-content: space-between!important;
     }
 }
 
@@ -3676,7 +3673,7 @@ body {
         width: 100%!important;
         flex-direction: column!important;
         max-width: none!important;
-        justify-content: center!important;
+        justify-content: space-between!important;
         align-items: center!important;
     }
     .width-50-percent {
@@ -3717,7 +3714,7 @@ body {
     }
     .pricing_section_container_1 , .pricing_section_container_2 {
         padding: 0px!important;
-        justify-content: space-around!important;
+        justify-content: center!important;
         margin-top: 0px!important;
     }  
     .second-section img {
@@ -3833,4 +3830,33 @@ body {
     .slider-indecator {
         bottom: -24px!important;
     }
+}
+.section-spacing {
+    padding: 14vh 0 23vh!important;
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+}
+.padding-top-48px {
+    padding-top: 48px!important;
+}
+.slider-indecator .carousel-indicators li {
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    opacity: 1;
+    background-color: white;
+}   
+
+.slider-indecator .carousel-indicators .active {
+    background-color: #000;
+}
+.min-height-auto {
+    min-height: auto!important;
+}
+.border-for-calculator {
+    border: 1px solid #777!important;
+    border-radius: 0.25rem!important;
+}
+#amount {
+    width: 100%!important;
 }
